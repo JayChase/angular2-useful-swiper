@@ -25,7 +25,7 @@ export class SwiperComponent implements OnInit, AfterViewChecked {
 
         this.slideCount = this.swiperWrapper.childElementCount;
 
-        this.Swiper = new Swiper('.swiper-container', this.config);
+        this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('.swiper-container'), this.config);
     }
 
     ngAfterViewChecked() {
