@@ -1,13 +1,13 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "1.0.2-alpha",
+  "version": "1.0.3-alpha",
   "description": "Use iDangero.us's Swiper  in Angular 2.",
   "directories": {},
   "files": [
     "lib"
   ],
-  "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
+  "main": "./lib/swiper.module.js",
+  "typings": "./lib/swiper.module.d.ts",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\"",
     "code": "tsc && concurrently \"tsc -w\" \"lite-server -c bs-config.js\" \"karma start karma.conf.js\"",
