@@ -33,7 +33,7 @@ and add the package to the list of packages.
  ```javascript
 var packages = {
     ...
-    'angular2-useful-swiper': { defaultExtension: 'js' }
+    'angular2-useful-swiper': { main: 'swiper.module.js', defaultExtension: 'js' }
 };
 ```
 
@@ -52,7 +52,7 @@ import { MdToolbarModule } from '@angular2-material/toolbar';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdInputModule } from '@angular2-material/input';
 
-import { SwiperModule } from '../src/swiper.module';
+import { SwiperModule } from 'angular2-useful-swiper';
 
 import { AppComponent }   from './app.component';
 import { DemoComponent }   from './demo.component';
