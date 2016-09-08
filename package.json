@@ -1,7 +1,7 @@
 {
   "name": "angular2-useful-swiper",
   "version": "1.0.0-alpha",
-  "description": "Use iDangero.us' great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular 2.",
+  "description": "Use iDangero.us's Swiper  in Angular 2.",
   "directories": {},
   "files": [
     "lib"

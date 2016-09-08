@@ -1,6 +1,6 @@
 ##angular2-useful-swiper
 
-Use iDangero.us' great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular 2.
+Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular 2.
 
 ###Install
 
