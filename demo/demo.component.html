@@ -1,0 +1,22 @@
+<md-card>
+    <md-card-title>Overview</md-card-title>
+    <md-card-content>
+        wip.
+    </md-card-content>
+</md-card>
+<md-card>
+    <md-card-title>Demo</md-card-title>
+    <md-card-content>
+        <swiper [config]="config">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" *ngFor="let image of images" [src]="image">
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </swiper>
+    </md-card-content>
+    <md-card-actions>
+        <button md-raised-button color="primary" (click)="loadImages()">load images</button>
+    </md-card-actions>
+</md-card>
