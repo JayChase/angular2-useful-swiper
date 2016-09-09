@@ -1,6 +1,6 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Use iDangero.us's Swiper  in Angular 2.",
   "directories": {},
   "files": [
@@ -22,7 +22,10 @@
     "prepublish": "tsc && npm run pack"
   },
   "keywords": [
-    "Angular2"
+    "Angular2",
+    "swiper",
+    "slider",
+    "carousel"
   ],
   "author": "JayChase",
   "license": "MIT",
@@ -33,7 +36,7 @@
   "devDependencies": {
     "@angular/common": "2.0.0-rc.6",
     "@angular/compiler": "2.0.0-rc.6",
-    "@angular/core": "2.0.0-rc.6",    
+    "@angular/core": "2.0.0-rc.6",
     "@angular/http": "2.0.0-rc.6",
     "@angular/platform-browser": "2.0.0-rc.6",
     "@angular/platform-browser-dynamic": "2.0.0-rc.6",
@@ -68,5 +71,11 @@
     "typings": "^0.8.1",
     "zone.js": "^0.6.17"
   },
-  "repository": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Useful-Software-Solutions-Ltd/angular2-useful-swiper.git"
+  },
+   "bugs": {
+    "url": "https://github.com/Useful-Software-Solutions-Ltd/angular2-useful-swiper/issues"
+  }
 }
