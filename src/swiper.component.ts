@@ -11,7 +11,6 @@ declare var Swiper: any;
 export class SwiperComponent implements OnInit, AfterViewChecked {
     //add all the options as optional settings and use them to create an options object
     @Input() config: Object;
-    @Input() ready: boolean;
 
     Swiper: any;
 
@@ -22,9 +21,7 @@ export class SwiperComponent implements OnInit, AfterViewChecked {
 
     ngOnInit() {
         this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
-
         this.slideCount = this.swiperWrapper.childElementCount;
-
         this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('.swiper-container'), this.config);
     }
 
