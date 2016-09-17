@@ -5,7 +5,6 @@
     },
     map: {
       'demo': 'demo', // 'dist',
-
       'angular2-useful-swiper': 'src',
 
       // angular bundles
@@ -15,7 +14,6 @@
       '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
-      '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // angular testing umd bundles
@@ -37,6 +35,10 @@
       'angular2-useful-swiper': { defaultExtension: 'js' },
       'rxjs': { defaultExtension: 'js' },
       '@angular2-material/core': { format: 'cjs', defaultExtension: 'js', main: 'core.js' },
+      '@angular2-material/progress-circle': { format: 'cjs', defaultExtension: 'js', main: 'progress-circle.js' },
+      '@angular2-material/icon': { format: 'cjs', defaultExtension: 'js', main: 'icon.js' },
+      '@angular2-material/list': { format: 'cjs', defaultExtension: 'js', main: 'list.js' },
+      '@angular2-material/sidenav': { format: 'cjs', defaultExtension: 'js', main: 'sidenav.js' },
       '@angular2-material/toolbar': { format: 'cjs', defaultExtension: 'js', main: 'toolbar.js' },
       '@angular2-material/card': { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
       '@angular2-material/input': { format: 'cjs', defaultExtension: 'js', main: 'input.js' },
