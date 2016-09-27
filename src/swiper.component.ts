@@ -3,10 +3,11 @@ import { Component, Input, OnInit, OnChanges, SimpleChanges, ElementRef, ViewChi
 declare var Swiper: any;
 
 @Component({
-    moduleId: module.id,
     selector: 'swiper',
-    templateUrl: 'swiper.component.html',
-    styleUrls: ['swiper.component.css']
+    template: `<div class="swiper-container">
+                    <ng-content></ng-content>
+                </div>`,
+    styles: [':host {display: block;}', '.swiper-container {width: auto;height: auto;}']
 })
 export class SwiperComponent implements OnInit, AfterViewChecked {
     //add all the options as optional settings and use them to create an options object
@@ -26,7 +27,7 @@ export class SwiperComponent implements OnInit, AfterViewChecked {
     }
 
     ngAfterViewChecked() {
-        if (this.slideCount !== this.swiperWrapper.childElementCount) {       
+        if (this.slideCount !== this.swiperWrapper.childElementCount) {
             this.slideCount = this.swiperWrapper.childElementCount
             this.Swiper.update();
         }
