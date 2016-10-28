@@ -36,5 +36,6 @@ typings
 *.js
 !lib/*.js
 !systemjs.config.js
+!bs-config.js
 
 npm-debug.log.*
