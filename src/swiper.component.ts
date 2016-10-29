@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges, ElementRef, ViewChild, AfterViewChecked } from '@angular/core';
+import { Component, Input, ElementRef, ViewChild, AfterViewInit, AfterViewChecked } from '@angular/core';
 
 declare var Swiper: any;
 
@@ -9,7 +9,7 @@ declare var Swiper: any;
                 </div>`,
     styles: [':host {display: block;}', '.swiper-container {width: auto;height: auto;}']
 })
-export class SwiperComponent implements OnInit, AfterViewChecked {
+export class SwiperComponent implements AfterViewInit, AfterViewChecked {
     //add all the options as optional settings and use them to create an options object
     @Input() config: Object;
 
@@ -20,7 +20,7 @@ export class SwiperComponent implements OnInit, AfterViewChecked {
 
     constructor(private elementRef: ElementRef) { }
 
-    ngOnInit() {
+    ngAfterViewInit() {
         this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
         this.slideCount = this.swiperWrapper.childElementCount;
         this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('.swiper-container'), this.config);
