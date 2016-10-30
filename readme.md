@@ -37,6 +37,17 @@ var packages = {
 };
 ```
 
+####or for angular-cli
+
+Add the package to **angular-cli.json** 
+
+```json
+"packages": [
+    "node_modules/angular2-useful-swiper/lib"
+  ]
+```
+
+
 ###How to use it
 
 Import the **SwiperModule** at the appropiate level in your app. If you are going to use the **HighlightJsService** than add the provider too.
@@ -52,7 +63,7 @@ import { MdToolbarModule } from '@angular2-material/toolbar';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdInputModule } from '@angular2-material/input';
 
-import { SwiperModule } from 'angular2-useful-swiper';
+import { SwiperModule } from 'angular2-useful-swiper'; //or for angular-cli the path will be ../../node_modules/angular2-useful-swiper
 
 import { AppComponent }   from './app.component';
 import { DemoComponent }   from './demo.component';

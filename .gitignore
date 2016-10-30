@@ -37,5 +37,7 @@ typings
 !lib/*.js
 !systemjs.config.js
 !bs-config.js
+!karma-test-shim.js
+!karma.conf.js
 
 npm-debug.log.*

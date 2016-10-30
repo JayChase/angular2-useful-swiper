@@ -1,7 +1,7 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "2.0.1",
-  "description": "Use iDangero.us's Swiper  in Angular 2.",
+  "version": "2.0.2",
+  "description": "Use iDangero.us's Swiper in Angular 2.",
   "directories": {},
   "files": [
     "lib"
@@ -30,27 +30,19 @@
   "author": "JayChase",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": "2.0.0"
+    "@angular/core": "^2.0.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "@angular/common": "2.0.0",
-    "@angular/compiler": "2.0.0",
-    "@angular/core": "2.0.0",
-    "@angular/forms": "2.0.0",
-    "@angular/http": "2.0.0",
-    "@angular/platform-browser": "2.0.0",
-    "@angular/platform-browser-dynamic": "2.0.0",
-    "@angular/upgrade": "2.0.0",
-    "@angular2-material/button": "2.0.0-alpha.8",
-    "@angular2-material/card": "2.0.0-alpha.8",
-    "@angular2-material/core": "2.0.0-alpha.8",
-    "@angular2-material/icon": "2.0.0-alpha.8",
-    "@angular2-material/input": "2.0.0-alpha.8",
-    "@angular2-material/list": "2.0.0-alpha.8",
-    "@angular2-material/progress-circle": "2.0.0-alpha.8",
-    "@angular2-material/sidenav": "2.0.0-alpha.8",
-    "@angular2-material/toolbar": "2.0.0-alpha.8",
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/forms": "^2.0.0",
+    "@angular/http": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/upgrade": "^2.0.0",
+    "@angular/material": "^2.0.0-alpha.9",
     "canonical-path": "0.0.2",
     "concurrently": "^2.0.0",
     "core-js": "^2.4.1",

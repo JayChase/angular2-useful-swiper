@@ -6,13 +6,10 @@ import {
     ComponentFixture
 } from '@angular/core/testing';
 
-import { MdCardModule } from '@angular2-material/card';
-import { MdToolbarModule } from '@angular2-material/toolbar';
-import { MdButtonModule } from '@angular2-material/button';
-import { MdInputModule } from '@angular2-material/input';
+import { BrowserModule }  from '@angular/platform-browser';
+import { MaterialModule } from '@angular/material';
 import { SwiperModule } from '../../src/swiper.module';
 
-import { SwiperComponent } from '../../src/swiper.component';
 import { DemoComponent } from '../../demo/demo.component';
 
 class MockSwiper {
@@ -24,7 +21,7 @@ class MockSwiper {
         this.options = options;
     }
 
-    update(){
+    update() {
 
     }
 }
@@ -43,9 +40,8 @@ describe('demo component', () => {
 
         TestBed.configureTestingModule({
             imports: [
-                MdCardModule,
-                MdToolbarModule,
-                MdButtonModule,
+                BrowserModule,
+                MaterialModule.forRoot(),
                 SwiperModule
             ],
             declarations: [
