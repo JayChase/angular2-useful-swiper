@@ -1,11 +1,16 @@
-import { ElementRef, AfterViewInit, AfterViewChecked } from '@angular/core';
-export declare class SwiperComponent implements AfterViewInit, AfterViewChecked {
+import { ElementRef, AfterViewChecked, AfterViewInit, NgZone } from '@angular/core';
+export declare class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private elementRef;
+    private ngZone;
     config: Object;
+    initialize: boolean;
     Swiper: any;
     private swiperWrapper;
     private slideCount;
-    constructor(elementRef: ElementRef);
+    private initialized;
+    private shouldInitialize;
+    constructor(elementRef: ElementRef, ngZone: NgZone);
     ngAfterViewInit(): void;
+    setup(): void;
     ngAfterViewChecked(): void;
 }

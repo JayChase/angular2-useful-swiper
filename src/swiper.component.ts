@@ -1,4 +1,4 @@
-import { Component, Input, ElementRef, ViewChild, AfterViewInit, AfterViewChecked } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges, ElementRef, ViewChild, AfterViewChecked, AfterViewInit, NgZone } from '@angular/core';
 
 declare var Swiper: any;
 
@@ -9,25 +9,43 @@ declare var Swiper: any;
                 </div>`,
     styles: [':host {display: block;}', '.swiper-container {width: auto;height: auto;}']
 })
-export class SwiperComponent implements AfterViewInit, AfterViewChecked {
+export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     //add all the options as optional settings and use them to create an options object
     @Input() config: Object;
+    @Input('initialize') set initialize(value: boolean) {            
+            this.shouldInitialize = this.initialized ? false : value  ;
+    };
 
     Swiper: any;
 
     private swiperWrapper: any;
-    private slideCount: number = 0;
+    private slideCount: number = 0;        
+    private initialized: boolean = false;    
+    private shouldInitialize: boolean = true;    
 
-    constructor(private elementRef: ElementRef) { }
+    constructor(private elementRef: ElementRef, private ngZone: NgZone) { }
 
     ngAfterViewInit() {
-        this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
-        this.slideCount = this.swiperWrapper.childElementCount;
-        this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('.swiper-container'), this.config);
+        if (this.shouldInitialize) {
+            this.setup();
+        }
+    }
+
+    setup() {
+        if (!this.Swiper) {
+            this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
+            this.slideCount = this.swiperWrapper.childElementCount;
+            this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('.swiper-container'), this.config);
+            this.shouldInitialize = false;
+        }
     }
 
     ngAfterViewChecked() {
-        if (this.slideCount !== this.swiperWrapper.childElementCount) {
+        if(this.shouldInitialize){
+            this.setup();
+        }
+
+        if (this.swiperWrapper && this.slideCount !== this.swiperWrapper.childElementCount) {
             this.slideCount = this.swiperWrapper.childElementCount
             this.Swiper.update();
         }

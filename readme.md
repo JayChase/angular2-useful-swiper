@@ -140,6 +140,30 @@ This allows for dynamic slide lists as you can see from the demo in this repo.
 </swiper>
 ```
 
+####Manually initializing the Swiper
+
+By default the Swiper will be created in the **AfterViewChecked** event of the component. If the swiper is not going to have been rendered at this time (if it is on a hidden tab for example) it is best to handle the initialization manually.
+To do this use component's **initialize** property and only set it's value to true when ready. This will then initialize the Swiper the next time the next AfterViewChecked event is fired to ensure the DOM is ready. 
+
+```html
+<mdl-tabs mdl-ripple mdl-tab-active-index="0">
+	<mdl-tab-panel mdl-tab-panel-title="Tab1">
+		
+	</mdl-tab-panel>
+	<mdl-tab-panel mdl-tab-panel-title="Tab2" #panel>
+		<swiper [config]="config" class="wrap1" [initialize]="panel.isActive">
+			<div class="swiper-wrapper wrap1">
+				<img class="swiper-slide" *ngFor="let image of trigger.images" [src]="image">
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</swiper>
+	</mdl-tab-panel>	
+</mdl-tabs>
+```
+
+
 ###Future
 
 Next step is to improve the TypeScript integration by creating an interface for the options. Maybe also create some content templates for frequently used sliders. 
