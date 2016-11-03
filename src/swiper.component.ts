@@ -7,7 +7,7 @@ declare var Swiper: any;
     template: `<div class="swiper-container">
                     <ng-content></ng-content>
                 </div>`,
-    styles: [':host {display: block;}', '.swiper-container {width: auto;height: auto;}']
+    styles: [':host {display: block;}', '.swiper-container {width: 100%;height: 100%;}']
 })
 export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     //add all the options as optional settings and use them to create an options object
