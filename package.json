@@ -19,7 +19,8 @@
     "typings": "typings install -g",
     "setup": "typings install && npm install",
     "pack": "rimraf lib && xcopy src\\*.d.ts lib\\* /S /Y && xcopy src\\*.js lib\\* /S /Y && xcopy src\\*.css lib\\* /S /Y && xcopy src\\*.html lib\\* /S /Y && xcopy src\\*.map lib\\* /S /Y",
-    "prepublish": "tsc && npm run pack",
+    "a2-clear-build": "rimraf lib",
+    "prepublish": "npm run a2-clear-build && npm run a2-build",
     "a2-build": "ngc -p ./tsconfig-ngc.json"
   },
   "keywords": [
