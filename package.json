@@ -1,6 +1,6 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0",
   "description": "Use iDangero.us's Swiper in Angular 2.",
   "directories": {},
   "files": [
