@@ -162,7 +162,27 @@ To do this use component's **initialize** property and only set it's value to tr
 	</mdl-tab-panel>	
 </mdl-tabs>
 ```
+####Accessing the Siper instance
 
+When a new instance of Swiper is created it is set as a property on the component. You can then access this use a [template reference](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars).
+For example add the template reference **#usefulSwiper**
+
+```html
+<swiper [config]="config" #usefulSwiper>
+    <div class="swiper-wrapper">
+        <img class="swiper-slide" *ngFor="let image of images" [src]="image">
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</swiper>
+```
+
+..and then you can use the reference to access the **Swiper** property.
+
+```html
+<button (click)="usefulSwiper.Swiper.createLoop()">loop</button>
+```
 
 ###Future
 
