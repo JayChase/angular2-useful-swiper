@@ -50,7 +50,7 @@ Add the package to **angular-cli.json**
 
 ### How to use it
 
-Import the **SwiperModule** at the appropiate level in your app. If you are going to use the **HighlightJsService** than add the provider too.
+Import the **SwiperModule** at the appropiate level in your app. If you are going to use the **HighlightJsService**, then add the provider too.
 
 For example in **app.module.ts**
 
@@ -86,7 +86,7 @@ export class AppModule { }
 ```
 
 Add the swiper component to your component to create a slider and add the content as you normally would to set up a slider (see the official [demos](http://idangero.us/swiper/demos/#.V9C73YVOLaI) for more information).
-Note you don't need to include the **swiper-container** div just the content but the slides should be contained in a **swiper-wrapper** div and have the class **swiper-slide**.
+Note, you don't need to include the **swiper-container** div just the content, but the slides should be contained in a **swiper-wrapper** div and have the class **swiper-slide**.
 
 ```html
  <my-component>
@@ -142,8 +142,8 @@ This allows for dynamic slide lists as you can see from the demo in this repo.
 
 #### Manually initializing the Swiper
 
-By default the Swiper will be created in the **AfterViewChecked** event of the component. If the swiper is not going to have been rendered at this time (if it is on a hidden tab for example) it is best to handle the initialization manually.
-To do this use component's **initialize** property and only set it's value to true when ready. This will then initialize the Swiper the next time the next AfterViewChecked event is fired to ensure the DOM is ready. 
+By default the Swiper will be created in the **AfterViewChecked** event of the component. If the swiper is not going to have been rendered at this time (if it is on a hidden tab for example), it is best to handle the initialization manually.
+To do this use the component's **initialize** property and only set it's value to true when ready. This will then initialize the Swiper the next time the next AfterViewChecked event is fired to ensure the DOM is ready. 
 
 ```html
 <mdl-tabs mdl-ripple mdl-tab-active-index="0">
@@ -162,9 +162,10 @@ To do this use component's **initialize** property and only set it's value to tr
 	</mdl-tab-panel>	
 </mdl-tabs>
 ```
-#### Accessing the Siper instance
 
-When a new instance of Swiper is created it is set as a property on the component. You can then access this use a [template reference](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars).
+#### Accessing the Swiper instance
+
+When a new instance of Swiper is created it is set as a property on the component. You can then access this by using a [template reference](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars).
 For example add the template reference **#usefulSwiper**
 
 ```html
