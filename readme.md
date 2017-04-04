@@ -39,14 +39,7 @@ var packages = {
 
 #### or for angular-cli
 
-Add the package to **angular-cli.json** 
-
-```json
-"packages": [
-    "node_modules/angular2-useful-swiper/lib"
-  ]
-```
-
+Just install the package and then import the module as below.
 
 ### How to use it
 
@@ -125,6 +118,14 @@ export class MyComponent implements OnInit {
             spaceBetween: 30
         };
 ```
+
+Set the height and width of the component. It can be targeted by its name ##swiper##
+
+```css
+swiper{
+    height: 300px;
+    width: 400px;
+}
 
 The component also checks for the contents of swiper-wrapper being changed and calls update on the swiper when they are. 
 This allows for dynamic slide lists as you can see from the demo in this repo.
