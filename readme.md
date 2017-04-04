@@ -50,7 +50,7 @@ Add the package to **angular-cli.json**
 
 ### How to use it
 
-Import the **SwiperModule** at the appropiate level in your app. If you are going to use the **HighlightJsService**, then add the provider too.
+Import the **SwiperModule** at the appropiate level in your app.
 
 For example in **app.module.ts**
 
