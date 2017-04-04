@@ -44,7 +44,7 @@ class BasicHostComponent {
                 <img class="swiper-slide" *ngFor="let image of images" [src]="image">
             </div>
         </swiper>
-    </div>`,
+    </div>`
 })
 class ManualHostComponent {
     images: string[];
@@ -86,7 +86,7 @@ describe('SwiperComponent', () => {
             return mockSwiper;
         };
 
-        spyOn(window, 'Swiper').and.callThrough();
+        spyOn((<any>window), 'Swiper').and.callThrough();
 
         TestBed.configureTestingModule({
             declarations: [

@@ -1,14 +1,14 @@
-##angular2-useful-swiper
+## angular2-useful-swiper
 
 Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular 2.
 
-###Install
+### Install
 
 ```bash
 npm install --save angular2-useful-swiper
 ```
 
-###setup
+### Setup
 
 Add Swiper to your single page
 
@@ -17,7 +17,7 @@ Add Swiper to your single page
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
 ```
 
-####SystemJS
+#### SystemJS
 
 In the SystemJs config file (systemjs.config.js) add a mapping for the package
 
@@ -37,7 +37,7 @@ var packages = {
 };
 ```
 
-####or for angular-cli
+#### or for angular-cli
 
 Add the package to **angular-cli.json** 
 
@@ -48,7 +48,7 @@ Add the package to **angular-cli.json**
 ```
 
 
-###How to use it
+### How to use it
 
 Import the **SwiperModule** at the appropiate level in your app. If you are going to use the **HighlightJsService** than add the provider too.
 
@@ -91,23 +91,23 @@ Note you don't need to include the **swiper-container** div just the content but
 ```html
  <my-component>
        <swiper [config]="config">
-            <div class="swiper-wrapper">
+        <div class="swiper-wrapper">
             <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </swiper>
  </my-component>
 ```
@@ -140,7 +140,7 @@ This allows for dynamic slide lists as you can see from the demo in this repo.
 </swiper>
 ```
 
-####Manually initializing the Swiper
+#### Manually initializing the Swiper
 
 By default the Swiper will be created in the **AfterViewChecked** event of the component. If the swiper is not going to have been rendered at this time (if it is on a hidden tab for example) it is best to handle the initialization manually.
 To do this use component's **initialize** property and only set it's value to true when ready. This will then initialize the Swiper the next time the next AfterViewChecked event is fired to ensure the DOM is ready. 
@@ -162,7 +162,7 @@ To do this use component's **initialize** property and only set it's value to tr
 	</mdl-tab-panel>	
 </mdl-tabs>
 ```
-####Accessing the Siper instance
+#### Accessing the Siper instance
 
 When a new instance of Swiper is created it is set as a property on the component. You can then access this use a [template reference](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars).
 For example add the template reference **#usefulSwiper**
@@ -184,6 +184,6 @@ For example add the template reference **#usefulSwiper**
 <button (click)="usefulSwiper.Swiper.createLoop()">loop</button>
 ```
 
-###Future
+### Future
 
 Next step is to improve the TypeScript integration by creating an interface for the options. Maybe also create some content templates for frequently used sliders. 

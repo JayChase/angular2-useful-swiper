@@ -1,7 +1,7 @@
 <md-card>
-    <md-card-title>Demo</md-card-title>
+    <md-card-title class="test">Demo</md-card-title>
     <md-card-content>
-        <swiper [config]="config">
+        <swiper class="swiper" [config]="config">
             <div class="swiper-wrapper">
                 <img class="swiper-slide" *ngFor="let image of images" [src]="image">
             </div>
