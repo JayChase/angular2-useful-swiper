@@ -15,6 +15,7 @@ export class DemoComponent implements OnInit {
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        loop: true,
         spaceBetween: 30
     };
 
@@ -27,8 +28,7 @@ export class DemoComponent implements OnInit {
         this.images = [
             'http://localhost:3000/public/images/yellow.png',
             'http://localhost:3000/public/images/green.png',
-            'http://localhost:3000/public/images/blue.png',
-            'http://localhost:3000/public/images/red.png'
+            'http://localhost:3000/public/images/blue.png'
         ];
     }
 

@@ -9,7 +9,7 @@ import {
 import { AppComponent } from '../../demo/app.component';
 
 describe('App component', () => {
-    var testTemplate = '<div>TEST</div>';
+    const testTemplate = '<div>TEST</div>';
 
     beforeEach(() => {
         TestBed.configureTestingModule({
@@ -20,14 +20,15 @@ describe('App component', () => {
     it('should build without error', async(() => {
         TestBed.overrideComponent(AppComponent, {
             set: {
-                template: testTemplate
+                template: testTemplate,
+                templateUrl: null
             }
         });
 
         TestBed.compileComponents().then(() => {
-            var fixture = TestBed.createComponent(AppComponent);
+            const fixture = TestBed.createComponent(AppComponent);
             fixture.detectChanges();
-            var compiled = fixture.debugElement.nativeElement;
+            const compiled = fixture.debugElement.nativeElement;
 
             expect(compiled).not.toBeNull();
         });

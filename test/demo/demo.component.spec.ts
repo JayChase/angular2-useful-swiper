@@ -52,9 +52,9 @@ describe('demo component', () => {
 
     it('should build without error', async(() => {
         TestBed.compileComponents().then(() => {
-            var fixture = TestBed.createComponent(DemoComponent);
+            const fixture = TestBed.createComponent(DemoComponent);
             fixture.detectChanges();
-            var compiled = fixture.debugElement.nativeElement;
+            const compiled = fixture.debugElement.nativeElement;
 
             expect(compiled).not.toBeNull();
         });
