@@ -15,7 +15,6 @@ export class DemoComponent implements OnInit {
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        loop: true,
         spaceBetween: 30
     };
 
