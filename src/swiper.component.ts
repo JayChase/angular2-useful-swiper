@@ -11,7 +11,7 @@ declare var Swiper: any;
 })
 export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     // add all the options as optional settings and use them to create an options object
-    @Input() config: Object;
+    @Input() config: any;
     @Input('initialize') set initialize(value: boolean) {
         this.shouldInitialize = this.initialized ? false : value;
     };

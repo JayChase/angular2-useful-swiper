@@ -2,7 +2,7 @@ import { ElementRef, AfterViewChecked, AfterViewInit, NgZone } from '@angular/co
 export declare class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private elementRef;
     private ngZone;
-    config: Object;
+    config: any;
     initialize: boolean;
     Swiper: any;
     private swiperWrapper;
