@@ -1,3 +1,3 @@
-<div [ngClass]="{'swiper-container': !config?.containerModifierClass}">
+<div [ngClass]="{'swiper-container': config?.containerModifierClass === undefined }">
     <ng-content></ng-content>
 </div>
