@@ -1,7 +1,7 @@
-import { ElementRef, AfterViewChecked, AfterViewInit, NgZone } from '@angular/core';
+import { ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 export declare class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private elementRef;
-    private ngZone;
+    private changeDetectorRef;
     config: any;
     initialize: boolean;
     Swiper: any;
@@ -9,7 +9,7 @@ export declare class SwiperComponent implements AfterViewChecked, AfterViewInit 
     private slideCount;
     private initialized;
     private shouldInitialize;
-    constructor(elementRef: ElementRef, ngZone: NgZone);
+    constructor(elementRef: ElementRef, changeDetectorRef: ChangeDetectorRef);
     ngAfterViewInit(): void;
     setup(): void;
     ngAfterViewChecked(): void;

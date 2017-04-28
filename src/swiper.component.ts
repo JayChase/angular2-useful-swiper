@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges, ElementRef, ViewChild, AfterViewChecked, AfterViewInit, NgZone } from '@angular/core';
+import { Component, Input, OnInit, ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 
 declare var Swiper: any;
 
@@ -23,7 +23,7 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private initialized = false;
     private shouldInitialize = true;
 
-    constructor(private elementRef: ElementRef, private ngZone: NgZone) { }
+    constructor(private elementRef: ElementRef, private changeDetectorRef: ChangeDetectorRef) { }
 
     ngAfterViewInit() {
         if (this.shouldInitialize) {
@@ -37,6 +37,7 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
             this.slideCount = this.swiperWrapper.childElementCount;
             this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
             this.shouldInitialize = false;
+            this.changeDetectorRef.detectChanges();
         }
     }
 
