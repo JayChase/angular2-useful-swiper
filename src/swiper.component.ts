@@ -4,7 +4,7 @@ declare var Swiper: any;
 
 @Component({
     selector: 'swiper',
-    template: `<div [ngClass]="{'swiper-container': config?.containerModifierClass === undefined }">
+    template: `<div class="swiper-container">
                     <ng-content></ng-content>
                 </div>`,
     styles: [':host {display: block;}', ':host > div {width: 100%;height: 100%;}']
