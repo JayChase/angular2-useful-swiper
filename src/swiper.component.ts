@@ -33,11 +33,15 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
 
     setup() {
         if (!this.Swiper) {
-            this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
-            this.slideCount = this.swiperWrapper.childElementCount;
-            this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
+            // if rendered on server querySelector is undefined
+            if(this.elementRef.nativeElement.querySelector) {
+                this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
+                this.slideCount = this.swiperWrapper.childElementCount;
+                this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
+                this.changeDetectorRef.detectChanges();
+            }
+
             this.shouldInitialize = false;
-            this.changeDetectorRef.detectChanges();
         }
     }
 
