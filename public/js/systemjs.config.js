@@ -15,6 +15,7 @@
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js',
       '@angular/material': 'npm:@angular/material/bundles/material.umd.js',
 
       // angular testing umd bundles
@@ -26,6 +27,7 @@
       '@angular/http/testing': 'npm:@angular/http/bundles/http-testing.umd.js',
       '@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
       '@angular/forms/testing': 'npm:@angular/forms/bundles/forms-testing.umd.js',
+      '@angular/animations/testing': 'npm:@angular/animations/bundles/animations-testing.umd.js',
 
       'rxjs': 'node_modules/rxjs',
     },
