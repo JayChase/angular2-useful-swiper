@@ -2,6 +2,10 @@
 
 Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular 2.
 
+#### Quick links
+[Plunker template](http://embed.plnkr.co/qM4jHG/)
+[Swiper homepage](http://idangero.us/swiper/#.WTiywWiGNhE)
+
 ### Install
 
 ```bash
