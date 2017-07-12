@@ -27,7 +27,7 @@
       '@angular/http/testing': 'npm:@angular/http/bundles/http-testing.umd.js',
       '@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
       '@angular/forms/testing': 'npm:@angular/forms/bundles/forms-testing.umd.js',
-      '@angular/animations/testing': 'npm:@angular/animations/bundles/animations-testing.umd.js',
+      '@angular/animations/testing': 'npm:@angular/animations/bundles/animations-browser-testing.umd.js',
 
       'rxjs': 'node_modules/rxjs',
     },

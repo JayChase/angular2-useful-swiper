@@ -6,7 +6,7 @@ import {
     ComponentFixture
 } from '@angular/core/testing';
 
-import { BrowserModule }  from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from '@angular/material';
 import { SwiperModule } from '../../src/swiper.module';
 
