@@ -130,6 +130,7 @@ swiper{
     height: 300px;
     width: 400px;
 }
+```
 
 The component also checks for the contents of swiper-wrapper being changed and calls update on the swiper when they are. 
 This allows for dynamic slide lists as you can see from the demo in this repo.
@@ -143,6 +144,16 @@ This allows for dynamic slide lists as you can see from the demo in this repo.
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </swiper>
+```
+
+**note for Bootstrap users**
+
+To ensure the swiper works will with a column layout you may need to set the box-sizing to border-box on the swiper-wrapper.
+
+```css
+.swiper-wrapper {
+    box-sizing: border-box;
+}
 ```
 
 #### Manually initializing the Swiper
