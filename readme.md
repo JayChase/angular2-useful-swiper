@@ -21,6 +21,25 @@ Add Swiper to your single page
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
 ```
 
+..or with angular-cli you can add the package
+
+```bash
+npm install --save swiper
+```
+
+then add the js and css to angular-cli.json
+
+
+```json
+    "styles": [
+        "styles.css",
+        "../node_modules/swiper/dist/css/swiper.css"        
+    ],
+    "scripts": [
+        "../node_modules/swiper/dist/js/swiper.js"                
+    ],
+```
+
 #### SystemJS
 
 In the SystemJs config file (systemjs.config.js) add a mapping for the package
@@ -60,7 +79,7 @@ import { MdToolbarModule } from '@angular2-material/toolbar';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdInputModule } from '@angular2-material/input';
 
-import { SwiperModule } from 'angular2-useful-swiper'; //or for angular-cli the path will be ../../node_modules/angular2-useful-swiper
+import { SwiperModule } from 'angular2-useful-swiper';
 
 import { AppComponent }   from './app.component';
 import { DemoComponent }   from './demo.component';
