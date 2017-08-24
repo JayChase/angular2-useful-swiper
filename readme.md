@@ -220,7 +220,7 @@ For example add the template reference **#usefulSwiper**
 <button (click)="usefulSwiper.swiper.createLoop()">loop</button>
 ```
 
-To access the swiper instance and all of it's properties and methods use a viewchild.
+To access the swiper instance and all of it's properties, methods and events use a viewchild.
 
 ```typescript
 

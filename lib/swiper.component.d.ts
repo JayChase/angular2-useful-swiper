@@ -3,7 +3,7 @@ import { ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef } from '
 export declare class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private elementRef;
     private changeDetectorRef;
-    config: any;
+    config: SwiperOptions;
     initialize: boolean;
     swiper: Swiper;
     private swiperWrapper;
