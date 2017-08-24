@@ -133,7 +133,7 @@ Set the config for the swiper in you component and bind it to the component conf
 ```javascript
 export class MyComponent implements OnInit {
 
-    config: Object = {
+    config: SwiperOptions = {
             pagination: '.swiper-pagination',
             paginationClickable: true,
             nextButton: '.swiper-button-next',
@@ -220,10 +220,16 @@ For example add the template reference **#usefulSwiper**
 <button (click)="usefulSwiper.swiper.createLoop()">loop</button>
 ```
 
-To access the swiper instance and all of it's properties, methods and events use a viewchild.
+To access the swiper instance and all of it's properties, methods and events use a viewchild to get the component.swiper property.
 
 ```typescript
+ @ViewChild('usefulSwiper') usefulSwiper: SwiperComponent;
 
+ ...
+
+  next() {
+    this.usefulSwiper.swiper.slideNext();
+  }
 ```
 
 ### Future
