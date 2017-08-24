@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 
-declare var Swiper: any;
+//declare var Swiper: any;
 
 @Component({
     selector: 'swiper',
@@ -16,7 +16,7 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
         this.shouldInitialize = this.initialized ? false : value;
     };
 
-    Swiper: any;
+    swiper: Swiper;
 
     private swiperWrapper: any;
     private slideCount = 0;
@@ -32,12 +32,12 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     }
 
     setup() {
-        if (!this.Swiper) {
+        if (!this.swiper) {
             // if rendered on server querySelector is undefined
             if (this.elementRef.nativeElement.querySelector) {
                 this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
                 this.slideCount = this.swiperWrapper.childElementCount;
-                this.Swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
+                this.swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
                 this.changeDetectorRef.detectChanges();
             }
 
@@ -52,7 +52,7 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
 
         if (this.swiperWrapper && this.slideCount !== this.swiperWrapper.childElementCount) {
             this.slideCount = this.swiperWrapper.childElementCount;
-            this.Swiper.update();
+            this.swiper.update();
         }
     }
 }

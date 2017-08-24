@@ -1,6 +1,6 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "4.0.7",
+  "version": "5.0.0-alpha.0",
   "description": "Use iDangero.us's Swiper in Angular.",
   "directories": {},
   "files": [
@@ -34,7 +34,9 @@
   "peerDependencies": {
     "@angular/core": "^2.3.1 || >=4.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/swiper": "^3.4.4"
+  },
   "devDependencies": {
     "@angular/animations": "^4.0.1",
     "@angular/common": "^4.0.1",

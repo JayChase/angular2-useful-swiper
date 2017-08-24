@@ -214,10 +214,16 @@ For example add the template reference **#usefulSwiper**
 </swiper>
 ```
 
-..and then you can use the reference to access the **Swiper** property.
+..and then you can use the reference to access the **swiper** property.
 
 ```html
-<button (click)="usefulSwiper.Swiper.createLoop()">loop</button>
+<button (click)="usefulSwiper.swiper.createLoop()">loop</button>
+```
+
+To access the swiper instance and all of it's properties and methods use a viewchild.
+
+```typescript
+
 ```
 
 ### Future

@@ -1,10 +1,11 @@
+/// <reference types="swiper" />
 import { ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 export declare class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private elementRef;
     private changeDetectorRef;
     config: any;
     initialize: boolean;
-    Swiper: any;
+    swiper: Swiper;
     private swiperWrapper;
     private slideCount;
     private initialized;
