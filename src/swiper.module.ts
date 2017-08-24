@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { CommonModule }  from '@angular/common';
+import { CommonModule } from '@angular/common';
 
-import { SwiperComponent }   from './swiper.component';
+import { SwiperComponent } from './swiper.component';
 
 @NgModule({
     imports: [
@@ -16,3 +16,5 @@ import { SwiperComponent }   from './swiper.component';
     providers: []
 })
 export class SwiperModule { }
+
+export * from './swiper.component';
