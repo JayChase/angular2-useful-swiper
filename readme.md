@@ -231,7 +231,3 @@ To access the swiper instance and all of it's properties, methods and events use
     this.usefulSwiper.swiper.slideNext();
   }
 ```
-
-### Future
-
-Next step is to improve the TypeScript integration by creating an interface for the options. Maybe also create some content templates for frequently used sliders. 
