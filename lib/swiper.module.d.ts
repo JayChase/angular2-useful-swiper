@@ -1,3 +1,3 @@
 export declare class SwiperModule {
 }
-export * from './swiper.component';
+export { SwiperComponent } from './swiper.component';

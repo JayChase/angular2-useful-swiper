@@ -17,4 +17,4 @@ import { SwiperComponent } from './swiper.component';
 })
 export class SwiperModule { }
 
-export * from './swiper.component';
+export { SwiperComponent } from './swiper.component';
