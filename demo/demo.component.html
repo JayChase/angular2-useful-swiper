@@ -1,6 +1,6 @@
-<md-card>
-    <md-card-title class="test">Demo</md-card-title>
-    <md-card-content>
+<mat-card>
+    <mat-card-title class="test">Demo</mat-card-title>
+    <mat-card-content>
         <swiper class="swiper" [config]="config">
             <div class="swiper-wrapper test">
                 <img class="swiper-slide" *ngFor="let image of images" [src]="image">
@@ -9,8 +9,8 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </swiper>
-    </md-card-content>
-    <md-card-actions>
-        <button md-raised-button color="primary" (click)="loadImages()">load images</button>
-    </md-card-actions>
-</md-card>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="loadImages()">load images</button>
+    </mat-card-actions>
+</mat-card>

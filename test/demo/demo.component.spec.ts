@@ -7,7 +7,7 @@ import {
 } from '@angular/core/testing';
 
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialModule } from '@angular/material';
+import { MatButtonModule, MatCardModule } from '@angular/material';
 import { SwiperModule } from '../../src/swiper.module';
 
 import { DemoComponent } from '../../demo/demo.component';
@@ -41,7 +41,8 @@ describe('demo component', () => {
         TestBed.configureTestingModule({
             imports: [
                 BrowserModule,
-                MaterialModule.forRoot(),
+                MatButtonModule,
+                MatCardModule,
                 SwiperModule
             ],
             declarations: [

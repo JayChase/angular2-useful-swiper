@@ -1,6 +1,8 @@
 ## angular2-useful-swiper
 
-Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular 2.
+Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular.
+
+Note this package does not yet support Swiper version 4 so be sure to user v3.4.2.
 
 #### Quick links
 [Plunker template](http://plnkr.co/edit/qM4jHG?p=preview), 
@@ -14,21 +16,20 @@ npm install --save angular2-useful-swiper
 
 ### Setup
 
-Add Swiper to your single page
+Add Swiper 3.4.2 to your single page
 
 ```html
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
 ```
 
 ..or with angular-cli you can add the package
 
 ```bash
-npm install --save swiper
+npm install --save swiper@3.4.2
 ```
 
 then add the js and css to angular-cli.json
-
 
 ```json
     "styles": [
