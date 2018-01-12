@@ -2,7 +2,7 @@
 
 Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular.
 
-Note this package does not yet support Swiper version 4 so be sure to user v3.4.2.
+Note this package does not yet support Swiper version 4 so be sure to user v3.4.2. If you are using Swiper v4+ please use [ngx-useful-swiper](https://github.com/JayChase/ngx-useful-swiper).
 
 #### Quick links
 [Plunker template](http://plnkr.co/edit/qM4jHG?p=preview), 
