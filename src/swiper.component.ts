@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, Input, ElementRef, AfterViewChecked, AfterViewInit, ChangeDetectorRef, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformServer, isPlatformBrowser } from '@angular/common';
 
 //declare var Swiper: any;
 
@@ -23,7 +24,7 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     private initialized = false;
     private shouldInitialize = true;
 
-    constructor(private elementRef: ElementRef, private changeDetectorRef: ChangeDetectorRef) { }
+    constructor(private elementRef: ElementRef, private changeDetectorRef: ChangeDetectorRef,@Inject(PLATFORM_ID) private platformId: Object) { }
 
     ngAfterViewInit() {
         if (this.shouldInitialize) {
@@ -32,16 +33,20 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
     }
 
     setup() {
-        if (!this.swiper) {
-            // if rendered on server querySelector is undefined
-            if (this.elementRef.nativeElement.querySelector) {
-                this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
-                this.slideCount = this.swiperWrapper.childElementCount;
-                this.swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
-                this.changeDetectorRef.detectChanges();
+        if (isPlatformBrowser(this.platformId)) {
+            if (!this.swiper) {
+                // if rendered on server querySelector is undefined
+                if (this.elementRef.nativeElement.querySelector) {
+                    this.swiperWrapper = this.elementRef.nativeElement.querySelector('.swiper-wrapper');
+                    this.slideCount = this.swiperWrapper.childElementCount;
+                    this.swiper = new Swiper(this.elementRef.nativeElement.querySelector('swiper > div'), this.config);
+                    this.changeDetectorRef.detectChanges();
+                }
+                this.shouldInitialize = false;
             }
-
-            this.shouldInitialize = false;
+        }
+        if (isPlatformServer(this.platformId)) {
+            return;
         }
     }
 
