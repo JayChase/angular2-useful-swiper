@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-title class="test">Demo</mat-card-title>
+  <mat-card-content>
+    <swiper class="swiper" [config]="config">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" *ngFor="let image of images" [src]="image" />
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="loadImages()">
+      load images
+    </button>
+  </mat-card-actions>
+</mat-card>

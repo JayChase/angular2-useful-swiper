@@ -1,0 +1,9 @@
+{
+  "name": "angular2-useful-swiper",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.0.1",
+    "@angular/core": "^8.0.1",
+    "swiper": "^4.5.0"
+  }
+}
