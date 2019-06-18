@@ -1,6 +1,21 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "0.0.1",
+  "version": "8.0.1-alpha.01",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaychase/angular2-useful-swiper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaychase/angular2-useful-swiper/issues"
+  },
+  "keywords": [
+    "Angular",
+    "swiper",
+    "slider",
+    "carousel"
+  ],
+  "author": "JayChase",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.0.1",
     "@angular/core": "^8.0.1",

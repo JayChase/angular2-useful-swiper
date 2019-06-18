@@ -1,15 +1,33 @@
 {
   "name": "angular2-useful-swiper",
-  "version": "0.0.0",
+  "version": "8.0.1-alpha.01",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build angular2-useful-swiper && ng build demo",
+    "copy-files": "copy README.md dist/angular2-useful-swiper && copy LICENSE.md dist/angular2-useful-swiper",
+    "pack": "cd dist/angular-highlight-js && npm pack",
+    "prep-lib": "npm run build && npm run copy-files && npm run pack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaychase/angular2-useful-swiper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaychase/angular2-useful-swiper/issues"
+  },
+  "keywords": [
+    "Angular",
+    "swiper",
+    "slider",
+    "carousel"
+  ],
+  "author": "JayChase",
+  "license": "MIT",
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.0.1",
     "@angular/cdk": "~8.0.1",
