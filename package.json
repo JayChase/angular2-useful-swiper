@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build angular2-useful-swiper && ng build demo",
     "copy-files": "copy README.md dist/angular2-useful-swiper && copy LICENSE.md dist/angular2-useful-swiper",
-    "pack": "cd dist/angular-highlight-js && npm pack",
+    "pack": "cd dist/angular2-useful-swiper && npm pack",
     "prep-lib": "npm run build && npm run copy-files && npm run pack",
     "test": "ng test",
     "lint": "ng lint",
