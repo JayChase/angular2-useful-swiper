@@ -2,8 +2,6 @@
 
 Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular.
 
-Note this package does not yet support Swiper version 4 so be sure to user v3.4.2.
-
 #### Quick links
 
 [Swiper homepage](http://idangero.us/swiper/#.WTiywWiGNhE)
