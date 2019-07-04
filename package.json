@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaychase/ngx-useful-swiper.git"
+    "url": "https://github.com/jaychase/angular2-useful-swiper.git"
   },
   "bugs": {
-    "url": "https://github.com/jaychase/ngx-useful-swiper/issues"
+    "url": "https://github.com/jaychase/angular2-useful-swiper/issues"
   },
   "keywords": [
     "Angular",
