@@ -1,6 +1,6 @@
 {
   "name": "ngx-useful-swiper",
-  "version": "8.0.1-beta.1",
+  "version": "8.0.1-beta.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

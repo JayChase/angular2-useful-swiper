@@ -9,7 +9,7 @@ Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI)
 ### Install
 
 ```bash
-npm install --save ngx-useful-swiper@next swiper
+npm install --save ngx-useful-swiper@latest swiper
 npm install --save-dev @types/swiper
 ```
 
