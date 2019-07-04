@@ -121,33 +121,33 @@
         }
       }
     },
-    "angular2-useful-swiper": {
+    "ngx-useful-swiper": {
       "projectType": "library",
-      "root": "projects/angular2-useful-swiper",
-      "sourceRoot": "projects/angular2-useful-swiper/src",
+      "root": "projects/ngx-useful-swiper",
+      "sourceRoot": "projects/ngx-useful-swiper/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/angular2-useful-swiper/tsconfig.lib.json",
-            "project": "projects/angular2-useful-swiper/ng-package.json"
+            "tsConfig": "projects/ngx-useful-swiper/tsconfig.lib.json",
+            "project": "projects/ngx-useful-swiper/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/angular2-useful-swiper/src/test.ts",
-            "tsConfig": "projects/angular2-useful-swiper/tsconfig.spec.json",
-            "karmaConfig": "projects/angular2-useful-swiper/karma.conf.js"
+            "main": "projects/ngx-useful-swiper/src/test.ts",
+            "tsConfig": "projects/ngx-useful-swiper/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-useful-swiper/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/angular2-useful-swiper/tsconfig.lib.json",
-              "projects/angular2-useful-swiper/tsconfig.spec.json"
+              "projects/ngx-useful-swiper/tsconfig.lib.json",
+              "projects/ngx-useful-swiper/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }

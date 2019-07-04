@@ -7,4 +7,4 @@ import { SwiperComponent } from './swiper/swiper.component';
   imports: [CommonModule],
   exports: [SwiperComponent]
 })
-export class Angular2UsefulSwiperModule {}
+export class NgxUsefulSwiperModule {}

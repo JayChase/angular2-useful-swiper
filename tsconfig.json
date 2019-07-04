@@ -15,10 +15,10 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
-      "angular2-useful-swiper": [
-        "projects/angular2-useful-swiper/src/public-api.ts"
+      "ngx-useful-swiper": [
+        "projects/ngx-useful-swiper/src/public-api.ts"
       ],
-      "angular2-useful-swiper/*": ["dist/angular2-useful-swiper/*"]
+      "ngx-useful-swiper/*": ["dist/ngx-useful-swiper/*"]
     }
   }
 }

@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Angular2UsefulSwiperModule } from 'angular2-useful-swiper';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    Angular2UsefulSwiperModule
+    NgxUsefulSwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-## angular2-useful-swiper
+## ngx-useful-swiper
 
 Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI) in Angular.
 
@@ -9,7 +9,7 @@ Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI)
 ### Install
 
 ```bash
-npm install --save angular2-useful-swiper@next swiper
+npm install --save ngx-useful-swiper@next swiper
 npm install --save-dev @types/swiper
 ```
 
@@ -36,12 +36,12 @@ Add the swiper styles to the app styles in **angular.json**.
 
 ### Usage
 
-In **app.module.ts** (or in whichever child module you are using the component) import the **Angular2UsefulSwiperModule** module.
+In **app.module.ts** (or in whichever child module you are using the component) import the **NgxUsefulSwiperModule** module.
 
 ```typescript
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, Angular2UsefulSwiperModule],
+  imports: [BrowserModule, NgxUsefulSwiperModule],
   providers: [],
   bootstrap: [AppComponent]
 })
