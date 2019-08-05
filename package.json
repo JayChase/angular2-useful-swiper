@@ -1,11 +1,11 @@
 {
   "name": "ngx-useful-swiper",
-  "version": "8.0.1-beta.2",
+  "version": "8.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build ngx-useful-swiper && ng build demo",
-    "copy-files": "copy README.md dist/ngx-useful-swiper && copy LICENSE.md dist/ngx-useful-swiper",
+    "copy-files": "copy README.md dist\\ngx-useful-swiper && copy LICENSE.md dist\\ngx-useful-swiper",
     "pack": "cd dist/ngx-useful-swiper && npm pack",
     "prep-lib": "npm run build && npm run copy-files && npm run pack",
     "test": "ng test",

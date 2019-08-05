@@ -1,6 +1,6 @@
 {
   "name": "ngx-useful-swiper",
-  "version": "8.0.1-beta.2",
+  "version": "8.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/jaychase/angular2-useful-swiper.git"
@@ -17,8 +17,8 @@
   "author": "JayChase",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^8.0.1",
-    "@angular/core": "^8.0.1",
+    "@angular/common": ">=7.0.0",
+    "@angular/core": ">=7.0.0",
     "swiper": "^4.5.0"
   }
 }
