@@ -4,7 +4,8 @@ Use iDangero.us's great slider [Swiper](http://idangero.us/swiper/#.V9C3w4VOLaI)
 
 #### Quick links
 
-[Swiper homepage](http://idangero.us/swiper/#.WTiywWiGNhE)
+- [Demo (StackBlitz)](https://stackblitz.com/edit/ngx-useful-swiper)
+- [Swiper homepage](http://idangero.us/swiper/#.WTiywWiGNhE)
 
 ### Install
 
