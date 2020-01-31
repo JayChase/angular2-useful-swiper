@@ -1,6 +1,6 @@
 {
   "name": "ngx-useful-swiper",
-  "version": "8.0.1",
+  "version": "9.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -30,12 +30,12 @@
   "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.14",
-    "@angular/cdk": "~8.0.1",
+    "@angular/cdk": "~8.2.3",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",
     "@angular/forms": "~8.2.14",
-    "@angular/material": "^8.0.1",
+    "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
