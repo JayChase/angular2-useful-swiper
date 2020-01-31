@@ -4,7 +4,9 @@ import {
   ChangeDetectorRef,
   Component,
   ElementRef,
-  Input
+  Input,
+  OnDestroy,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import Swiper, { SwiperOptions } from 'swiper';
 
@@ -12,16 +14,17 @@ import Swiper, { SwiperOptions } from 'swiper';
   // tslint:disable-next-line: component-selector
   selector: 'swiper',
   templateUrl: './swiper.component.html',
-  styleUrls: ['./swiper.component.css']
+  styleUrls: ['./swiper.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SwiperComponent implements AfterViewChecked, AfterViewInit {
+export class SwiperComponent implements AfterViewChecked, AfterViewInit, OnDestroy {
   // add all the options as optional settings and use them to create an options object
   @Input() config: SwiperOptions;
   @Input('initialize') set initialize(value: boolean) {
     this.shouldInitialize = this.initialized ? false : value;
   }
 
-  swiper: any;
+  swiper: Swiper;
 
   private swiperWrapper: any;
   private slideCount = 0;
@@ -70,5 +73,9 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit {
       this.slideCount = this.swiperWrapper.childElementCount;
       this.swiper.update();
     }
+  }
+
+  ngOnDestroy() {
+    this.swiper.destroy(true, true);
   }
 }
