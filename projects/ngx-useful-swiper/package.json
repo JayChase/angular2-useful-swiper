@@ -19,6 +19,6 @@
   "peerDependencies": {
     "@angular/common": ">=7.0.0",
     "@angular/core": ">=7.0.0",
-    "swiper": "^5.2.1"
+    "swiper": "^5.3.0"
   }
 }
