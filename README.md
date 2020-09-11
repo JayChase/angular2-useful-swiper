@@ -40,11 +40,13 @@ Add the swiper styles to the app styles in **angular.json**.
 In **app.module.ts** (or in whichever child module you are using the component) import the **NgxUsefulSwiperModule** module.
 
 ```typescript
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, NgxUsefulSwiperModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
@@ -79,6 +81,9 @@ Note, you don't need to include the **swiper-container** div just the content, b
 Set the config for the swiper in you component and bind it to the component config property as above.
 
 ```javascript
+import { SwiperOptions } from 'swiper';
+
+
 export class MyComponent implements OnInit {
 config: SwiperOptions = {
     pagination: { el: '.swiper-pagination', clickable: true },
