@@ -107,7 +107,9 @@
               "projects/demo/tsconfig.spec.json",
               "projects/demo/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -135,13 +137,13 @@
           "options": {
             "tsConfig": "projects/ngx-useful-swiper/tsconfig.lib.json",
             "project": "projects/ngx-useful-swiper/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ngx-useful-swiper/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -157,11 +159,16 @@
               "projects/ngx-useful-swiper/tsconfig.lib.json",
               "projects/ngx-useful-swiper/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "demo"
+  "defaultProject": "demo",
+  "cli": {
+    "analytics": "8eea1f0b-0e3c-4d86-a61d-118287ad379d"
+  }
 }
