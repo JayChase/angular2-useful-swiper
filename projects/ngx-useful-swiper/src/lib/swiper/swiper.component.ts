@@ -1,14 +1,17 @@
 import {
   AfterViewChecked,
   AfterViewInit,
+  ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   ElementRef,
+  Inject,
   Input,
   OnDestroy,
-  ChangeDetectionStrategy
+  PLATFORM_ID
 } from '@angular/core';
 import Swiper, { SwiperOptions } from 'swiper';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -26,12 +29,13 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit, OnDestr
 
   swiper: Swiper;
 
-  private swiperWrapper: any;
+  private swiperWrapper: HTMLElement;
   private slideCount = 0;
   private initialized = false;
   private shouldInitialize = true;
 
   constructor(
+    @Inject(PLATFORM_ID) private platformId: string,
     private elementRef: ElementRef,
     private changeDetectorRef: ChangeDetectorRef
   ) {}
@@ -44,8 +48,7 @@ export class SwiperComponent implements AfterViewChecked, AfterViewInit, OnDestr
 
   setup() {
     if (!this.swiper) {
-      // if rendered on server querySelector is undefined
-      if (this.elementRef.nativeElement.querySelector) {
+      if (isPlatformBrowser(this.platformId)) {
         this.swiperWrapper = this.elementRef.nativeElement.querySelector(
           '.swiper-wrapper'
         );
