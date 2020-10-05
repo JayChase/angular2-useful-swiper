@@ -178,7 +178,7 @@ For example add the template reference **#usefulSwiper**
 To access the swiper instance and all of it's properties, methods and events use a viewchild to get the component.swiper property.
 
 ```typescript
- @ViewChild('usefulSwiper',{static: false S}) usefulSwiper: SwiperComponent;
+ @ViewChild('usefulSwiper',{ static: false }) usefulSwiper: SwiperComponent;
 
  ...
 
