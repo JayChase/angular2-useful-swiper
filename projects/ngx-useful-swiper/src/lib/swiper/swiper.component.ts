@@ -1,23 +1,24 @@
 import {
   AfterViewChecked,
   AfterViewInit,
+  ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   ElementRef,
   Input,
   OnDestroy,
-  ChangeDetectionStrategy
 } from '@angular/core';
-import Swiper, { SwiperOptions } from 'swiper';
+import Swiper, { SwiperOptions } from 'swiper/bundle';
 
 @Component({
   // tslint:disable-next-line: component-selector
   selector: 'swiper',
   templateUrl: './swiper.component.html',
   styleUrls: ['./swiper.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SwiperComponent implements AfterViewChecked, AfterViewInit, OnDestroy {
+export class SwiperComponent
+  implements AfterViewChecked, AfterViewInit, OnDestroy {
   // add all the options as optional settings and use them to create an options object
   @Input() config: SwiperOptions;
   @Input('initialize') set initialize(value: boolean) {
