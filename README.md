@@ -29,7 +29,7 @@ Add the swiper styles to the app styles in **angular.json**.
           "options": {
             ...
             "styles": [
-              "./node_modules/swiper/swiper-bundle.css"
+              "./node_modules/swiper/swiper-bundle.css",
             ],
             ...
 ```
