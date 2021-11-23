@@ -77,6 +77,8 @@ export class SwiperComponent
   }
 
   ngOnDestroy() {
-    this.swiper.destroy(true, true);
+    if (this.swiper) {
+      this.swiper.destroy(true, true);
+    }
   }
 }
