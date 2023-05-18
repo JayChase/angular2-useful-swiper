@@ -1,27 +1,12 @@
 {
   "name": "ngx-useful-swiper",
-  "version": "10.0.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jaychase/angular2-useful-swiper.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jaychase/angular2-useful-swiper/issues"
-  },
-  "keywords": [
-    "Angular",
-    "swiper",
-    "slider",
-    "carousel"
-  ],
-  "author": "JayChase",
-  "license": "MIT",
-  "dependencies": {
-    "tslib": "^2.0.0"
-  },
+  "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": ">=6.0.0 || >=7.0.0 || >=8.0.0 || >=9.0.0 || >=10.0.0",
-    "@angular/core": ">=6.0.0 || >=7.0.0 || >=8.0.0 || >=9.0.0  || >=10.0.0",
-    "swiper": "^6.0.0"
-  }
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
 }

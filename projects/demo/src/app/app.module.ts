@@ -13,9 +13,9 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

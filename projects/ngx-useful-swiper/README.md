@@ -49,7 +49,7 @@ export class AppModule {}
 ```
 
 Add the swiper component to your component to create a slider and add the content as you normally would to set up a slider (see the official [demos](http://idangero.us/swiper/demos/#.V9C73YVOLaI) for more information).
-Note, you don't need to include the **swiper-container** div just the content, but the slides should be contained in a **swiper-wrapper** div and have the class **swiper-slide**.
+Note, you don't need to include the **swiper__container** div just the content, but the slides should be contained in a **swiper-wrapper** div and have the class **swiper-slide**.
 
 ```html
 <my-component>

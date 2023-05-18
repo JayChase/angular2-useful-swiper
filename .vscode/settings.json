@@ -22,8 +22,11 @@
         "terminal.ansiYellow": "#D2278F",
         "gitlens.trailingLineForegroundColor": "#dfd",
         "tab.activeBackground": "#6f8e45",
-        "activityBar.background": "#3C2540",
-        "titleBar.activeBackground": "#543459",
-        "titleBar.activeForeground": "#FBF9FC"
-    }
+        "activityBar.background": "#2C2F1A",
+        "titleBar.activeBackground": "#3D4224",
+        "titleBar.activeForeground": "#FAFBF7"
+    },
+    "cSpell.words": [
+        "swiper"
+    ]
 }

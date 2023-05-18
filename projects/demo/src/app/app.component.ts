@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -6,8 +6,8 @@ import { SwiperOptions } from 'swiper';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  images: string[];
+export class AppComponent {
+  images: string[] | undefined;
   config: SwiperOptions = {
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
@@ -17,10 +17,6 @@ export class AppComponent implements OnInit {
     spaceBetween: 30
   };
 
-  constructor() {}
-
-  ngOnInit() {}
-
   loadImages() {
     this.images = [
       'assets/images/yellow.png',
@@ -28,4 +24,3 @@ export class AppComponent implements OnInit {
       'assets/images/blue.png'
     ];
   }
-}
