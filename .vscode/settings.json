@@ -1,0 +1,29 @@
+{
+    "workbench.colorCustomizations": {
+        "terminal.background": "#15232D",
+        "terminal.foreground": "#F9F871",
+        "terminalCursor.background": "#F9F871",
+        "terminalCursor.foreground": "#F9F871",
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiBlue": "#FF9EBE",
+        "terminal.ansiBrightBlack": "#808080",
+        "terminal.ansiBrightBlue": "#FF9EBE",
+        "terminal.ansiBrightCyan": "#02ABEA",
+        "terminal.ansiBrightGreen": "#1FB714",
+        "terminal.ansiBrightMagenta": "#FF9EBE",
+        "terminal.ansiBrightRed": "#DD0907",
+        "terminal.ansiBrightWhite": "#FFFFFF",
+        "terminal.ansiBrightYellow": "#D2278F",
+        "terminal.ansiCyan": "#02ABEA",
+        "terminal.ansiGreen": "#1FB714",
+        "terminal.ansiMagenta": "#FF9EBE",
+        "terminal.ansiRed": "#A85490",
+        "terminal.ansiWhite": "#F9F871",
+        "terminal.ansiYellow": "#D2278F",
+        "gitlens.trailingLineForegroundColor": "#dfd",
+        "tab.activeBackground": "#6f8e45",
+        "activityBar.background": "#3C2540",
+        "titleBar.activeBackground": "#543459",
+        "titleBar.activeForeground": "#FBF9FC"
+    }
+}
